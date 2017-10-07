@@ -41,7 +41,11 @@ apt update &&
 sleep 1
 apt-get --yes --force-yes --allow-unauthenticated install openmediavault &&
 sleep 1
+wget http://omv-extras.org/openmediavault-omvextrasorg_latest_all4.deb
+sleep 1
 dpkg -i openmediavault-omvextrasorg_4.0.1_all.deb
+sleep 1
+apt-get -f install
 sleep 1
 apt update
 echo
