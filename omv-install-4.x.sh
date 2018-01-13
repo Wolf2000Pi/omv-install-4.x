@@ -17,7 +17,7 @@ echo  Ihre Antwort war: $answer
 if [ "$answer" != "n" ]
   then echo "deb http://packages.openmediavault.org/public arrakis main" > /etc/apt/sources.list.d/openmediavault.list &&
 sleep 5
-apt install --force-yes curl wget apt-transport-https dirmngr
+apt install --force-yes curl wget apt-transport-https dirmngr &&
 sleep 5
 gpg --recv-keys 7E7A6C592EF35D13 &&
 sleep 5
